@@ -9,9 +9,10 @@
     .hero-image{
         height: 565px;
         padding-top: 17%;
+    }
+    .h-image-1-url{
         background-image: linear-gradient(#009fb70f, #009fb775),url("../images/heropage-1-1023.jpg");
     }
-
     .button-s{
         display: none;
     }
@@ -47,4 +48,78 @@
     .weather-container {
         margin: 0;
     }
+
+    .hero-img-section button,.weather-container button{
+        border: 2px solid #e7482c;
+    }
+
+    .h-image-5-url{
+        background-image: linear-gradient(#009fb70f, #009fb775),url("../images/contact-1023.jpg");
+    }
+
+    .forecast{
+        padding: 0 7%;
+    }
+
+    .forecast div p{
+        font-size: 1rem;
+    }
+
+    .forecast div h5{
+        padding: 4% 0;
+    }
+    .rental-card:nth-child(even){
+        flex-direction: row-reverse;
+        
+    }
+
+    
+
+    .rental-card:nth-child(even) .rentcard-summary{
+        border-right:2px solid #272727ba;
+    }
+    
+    .rental-card:nth-child(odd) .rentcard-summary{
+        border-left:2px solid #272727ba;
+    }
+
+    .rental-card-a .rental-card:hover .rentcard-summary {
+        border-left: 2px solid #e7482c;
+    }
+    
+    .rental-card-a .rental-card:active .rentcard-summary {
+        border-left: 2px solid #e7482c;
+    }
+
+    .vehicle-container{
+        flex-direction: column;
+        width: 100%;
+        padding: 6%;
+        
+    }
+
+    .veh-img-cont,.veh-info-cont table {
+        width:100%;
+    }
+
+    .veh-info-cont{
+        margin: 7% 0;
+    }
+    
+    
+    .veh-info-cont button{
+        margin-top: 8%;
+    }
+    .scoot-grid{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2%;
+    }
+
+    .honda-section,.atv-section, .jeep-section{
+        padding: 0 5% 5% 5%;
+    }
+
+
+    
+    
 }

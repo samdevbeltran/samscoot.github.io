@@ -29,7 +29,7 @@
         justify-content: end;
     }
     .toggle-nav li a {
-        color: #e7482c;
+        
         padding: 0.75rem;
     }
 
@@ -40,6 +40,9 @@
 
     .hero-image{
         height: 670px;
+    }
+
+    .h-image-1-url{
         background-image: linear-gradient(#009fb70f, #009fb775),url("../images/heropage-1.jpg");
     }
 
@@ -51,8 +54,90 @@
         width: 30%;
     }
 
-    /* .rental-card{
+    .rental-card{
         flex-direction: column;
-        width: 30%;
-    } */
+        width: 100%;
+    }
+
+    .rental-card .rentcard-summary {
+        border: none;
+        border-top: 2px solid #272727ba;
+    }
+    .rental-card-container{
+        flex-direction: row;
+        gap: 12px;
+        justify-content: center;
+    }
+
+    .rentcard-summary{
+        width: 100%;
+    }
+
+    .weather-container{
+        margin-bottom: 10%;
+    }
+
+    .contact-section form{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .button-m:hover , button:hover{
+        color: #e7482c;
+        background-color: white;
+    }
+    .hero-img-section button:hover {
+        background-color: #e7482cc9;
+        color: white;
+    }
+
+    .rentcard-summary a:hover{
+        background-color: #e7482c;
+        color: white;
+    }
+
+    .contact-section form button:hover{
+        color: #e7482c;
+        background-color: white;
+    }
+
+    
+
+    .h-image-5-url{
+        background-image: linear-gradient(#009fb70f, #009fb775),url("../images/contact.jpg");
+    }
+
+    .rental-card:nth-child(even){
+        flex-direction: column;
+        
+    }
+
+    .rental-card:nth-child(even) .rentcard-summary{
+        border-right:none;
+    }
+    
+    .rental-card:nth-child(odd) .rentcard-summary{
+        border-left:none;
+    }
+
+    
+    
+    .rental-card-a .rental-card:hover div p{
+        color: #e7482c;
+    }
+    .rental-card-a .rental-card:hover{
+        border: 1px solid #e7482c;
+    }
+    .rental-card-a .rental-card:hover .rentcard-summary {
+        border: none;
+        border-top: 2px solid #e7482c;
+    }
+
+    .vehicle-containerhonda-container{
+        flex-direction: column;
+    }
+
+    .scoot-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }

@@ -39,12 +39,9 @@ ul li{
 a{
     text-decoration: none;
 }
-.toggle-nav li a{
-    
-    color: #f9f4f4;
-}
+
 .toggle-nav li a:active{
-    background-color: #e7482cc2!important;
+    background-color: #e7482cc2;
 }
 .toggle-nav{
     margin: 0;
@@ -86,7 +83,7 @@ a{
     
 }
 .active a{
-    color: white!important;
+    color: white;
 }
 
 
@@ -120,11 +117,12 @@ header{
     border: none;
     color: white;
     background-color: #e7482c;
-    border: 1px solid #e7482c;
     padding: 4%;
     width: 100%;
     border-radius: 11px
 }
+
+
 
 
 .hero-img-section button:active,.weather-container button:active{
@@ -136,11 +134,11 @@ header{
 .hero-image{
     text-align: center;
     width: 100%;
-    /* background-image: linear-gradient(#0000001c, #00000078),url("../images/heropage-1-420.jpg"); */
-    /* background-image: linear-gradient(#ffec5114, #ffec51a1),url(../images/heropage-1-420.jpg); */
-    background-image: linear-gradient(#009fb70f, #009fb775),url("../images/heropage-1-700.jpg");
     padding: 11%;
-    /* position: relative; */
+}
+
+.h-image-1-url{
+    background-image: linear-gradient(#009fb70f, #009fb775),url("../images/heropage-1-700.jpg");
 }
 .weather-container{
     margin: 10% 0;
@@ -193,21 +191,41 @@ header{
     color: #e7482c;
 }
 
-.rental-card:nth-child(odd){
+/* .rental-card:nth-child(odd){
     flex-direction: row-reverse;
     
+} */
+
+
+
+.rental-card-container{
+    display: flex;
+    flex-direction: column;
 }
+/* .rental-summary div picture img{
+    width: 100%;
+    border-radius: 10px 0 0px 10px;
+}
+.rental-summary div:nth-child(1) {
+    padding: 0 8%;
+    text-align: center;
+} */
+
 .rental-summary div picture img{
     width: 100%;
     border-radius: 10px 0 0px 10px;
 }
-
-.rental-summary div:nth-child(1) {
+.rental-summary > div:nth-child(1) {
     padding: 0 8%;
     text-align: center;
 }
 
-.rental-summary div:nth-child(5) {
+/* .rental-summary div:nth-child(1) {
+    padding: 0 8%;
+    text-align: center;
+} */
+
+.rental-summary > div:nth-child(3) {
     padding: 0 8%;
     text-align: center;
     background: #c3ecf0a8;
@@ -224,14 +242,14 @@ header{
     border-radius: 10px;
     padding: 1%;
 }
-.rental-card:nth-child(even) .rentcard-summary{
-    border-left:2px solid #272727ba;
-}
 
-
-.rental-card:nth-child(odd) .rentcard-summary{
+/* .rental-card:nth-child(odd) .rentcard-summary{
     border-right:2px solid #272727ba;
-}
+} */
+
+/* .rental-card:nth-child(odd) .rentcard-summary{
+    border-right:2px solid #272727ba;
+} */
 
 .rentcard-summary a{
     background-color: white;
@@ -377,12 +395,175 @@ footer div ul li a{
     border-radius: 0 0 12px 12px;
 }
 
+/* .forecast{
+    display: none;
+    padding: 0 15%;
+} */
+.forecast{
+    display: flex;
+}
+.forecast div{
+    text-align: center;
+    width: 20%;
+    border: 1px solid #FFEC51;
+    margin: 0.3%;
+    background-color: #bee9ef;
+}
+
+.forecast div hr{
+    margin: 2px;
+}
+
+.forecast div h5{
+    margin: 0;
+    margin-bottom: 9%;
+    padding: 11% 0;
+    background-color: #FFEC51;
+    color: #272727a8;
+}
+
+.forecast div span{
+    color: #272727a8;
+}
+.forecast div p{
+    margin: 0;
+}
+
+.pad-0{
+    padding: 0;
+}
+
+.width-100{
+    width: 100%;
+}
+
+.rental-card-a .rental-card:active{
+    border: 1px solid #e7482c;
+}
+
+.rental-card-a .rental-card:active div p{
+    color: #e7482c;
+}
+
+.rental-card-a .rental-card:hover div p{
+    color: #e7482c;
+}
+.rental-card-a .rental-card:hover{
+    border: 1px solid #e7482c;
+}
+
+
+.vehicle-container .veh-img-cont picture img{
+    width: 100%;
+}
+
+.vehicle-container{
+    border: 1px solid #27272766;
+    display: flex;
+}
+
+.veh-img-cont{
+    width: 30%;
+}
+.veh-info-cont{
+    flex-grow: 8;
+}
+
+
+.scoot-types-section{
+    background-image: linear-gradient(white,white, #009fb740);
+}
+
+
+.veh-info-cont table,td,th{
+    color: #272727;
+    border-collapse: collapse;
+    border: 1px solid #27272766;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.honda-section h3, .atv-section h3, .jeep-section h3{
+    text-align: center;
+}
+
+.honda-section, .atv-section, .jeep-section{
+    margin-top: 10%;
+    border: 1px solid #27272766;
+    border-radius: 12px;
+}
+
+.veh-info-cont button{
+    border: none;
+    color: white;
+    background-color: #e7482c;
+    width: 100%;
+    border-radius: 11px;
+    margin: 1% 0;
+}
+.veh-info-cont button:active{
+    color: #e7482c;
+    background-color: white;
+}
+
+.yellow-backG{
+    background-color: #FFEC51;
+}
+
+.blue-backG{
+    background-color: #009FB7;
+}
+
+.scoot-grid{
+    display: grid;
+    background-color: white;
+}
+
+.rental-pg{
+    background: white;
+    margin-bottom: 4%;
+}
 @media only screen and (max-width:439px){
     .hero-image{
         text-align: center;
-    width: 100%;
+    }
+
+    .h-image-1-url{
         background-image: linear-gradient(#009fb70f, #009fb775),url("../images/heropage-1-420.jpg");
-        padding: 11%;
+    }
+    .h-image-5-url{
+        background-image: linear-gradient(#009fb70f, #009fb775),url("../images/contact-420.jpg");
+    }
+    .forecast div{
+        height: 153px;
+    }
+
+    .forecast div img{
+        width: 40px;
+    }
+
+    .forecast div p{
+        font-size: .8rem;
+    }
+
+    .rent-card-sum{
+        width: 40%;
+    }
+    .veh-info-cont table,td,th{ 
+        font-size: .8rem;
+        
+    }
+    .veh-info-cont{ 
+        padding: 2% 0 0 4%;
+        
+    }
+
+    .veh-info-cont table{ 
+        width: 100%;    
+    }
+
+    .veh-info-cont button{
+        width: 100%;
     }
     
 }

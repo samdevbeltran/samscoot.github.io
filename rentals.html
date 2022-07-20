@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Contact | Scoots</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="header-container">
+            <header>
+                <div class="logo">
+                    <picture>
+                        <source media="(max-width:767px)" srcset="images/scootsLogoBlack60.png">
+                        <source media="(min-width:768px)" srcset="images/scootsLogoBlack80.png">
+                        <img src="images/scootsLogo200.png" alt="logo">
+                    </picture>
+                </div>
+                <button id="hamburgerBtn"><span>&#9776</span></button>
+                
+            </header>
+            <nav>
+                <ul class="toggle-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="rentals.html">Rentals</a></li>
+                    <li><a href="#">Reservations</a></li>
+                    <li><a href="#">Tours</a></li>
+                    <li ><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main>
+            <section class="hero-img-section">
+                <div class="hero-image h-image-5-url">
+                    <h1>Scoots</h1>
+                    <h2>Retals</h2>
+                    <button class="button-m">Reserve a Scooter</button>
+                </div>
+                <button class="button-s">Reserve a Scooter</button>
+            </section>
+            <section class="rental-summary scoot-types-section">
+                <div>
+                    <p>We have the following models, choose the one you like best</p>
+                </div>
+                <div class="rental-card-container rental-pg">
+                    <a href="#" class="rental-card-a">
+
+                        <div class="rental-card">
+                            <picture>
+                                <source media="(max-width:767px)" srcset="images/metropolitan2-420.jpg">
+                                <source media="(max-width:1023px" srcset="images/metropolitan2-640.jpg">
+                                <source media="(min-width:1024px)" srcset="images/metropolitan2-420.jpg">
+                                <img src="images/metropolitan2-420.jpg" alt="logo">
+                            </picture>
+                            <div class="rentcard-summary rent-card-sum pad-0">
+                                <p>Honda Motor Scooters</p>
+                            </div>
+                        </div>
+
+                    </a>
+                    <a href="#" class="rental-card-a">
+                        <div class="rental-card">
+                        <picture>
+                            <source media="(max-width:767px)" srcset="images/pioneer2-420.jpg">
+                            <source media="(max-width:1023px)" srcset="images/pioneer2-640.jpg">
+                            <source media="(min-width:1024px)" srcset="images/pioneer2-420.jpg">
+                            <img src="images/pioneer2-420.jpg" alt="logo">
+                        </picture>
+                        <div class="rentcard-summary rent-card-sum pad-0">
+                            <p>ATV Side-by-Side</p>     
+                        </div>
+                        </div>
+                    </a>
+                    <a href="#" class="rental-card-a">
+                        <div class="rental-card">
+                        <picture>
+                            <source media="(max-width:767px)" srcset="images/jeep2-420.jpg">
+                            <source media="(max-width:1023px)" srcset="images/jeep2-640.jpg">
+                            <source media="(min-width:1024px)" srcset="images/jeep2-420.jpg">
+                            <img src="images/jeep2-420.jpg" alt="logo">
+                        </picture>
+                        <div class="rentcard-summary rent-card-sum pad-0">
+                            <p>Jeep Rentals</p>
+                            
+                        </div>
+                        </div>
+                    </a>
+                </div>
+            
+            </section>
+            <!-- <section class="honda-section">
+                <h3>Honda Motor Scooter</h3>
+                <div class="scoot-grid">
+                    <div class="vehicle-container">
+                        <div class="veh-img-cont">
+                            <picture>
+                                <source media="(max-width:767px)" srcset="images/honda-metro-350.jpg">
+                                <img src="images/honda-metro-350.jpg" alt="logo">
+                            </picture>
+                        </div>
+                        <div class="veh-info-cont">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="veh-name"></td>
+                                        <td class="yellow-backG" style="text-align: center;" colspan="2"><strong>Reservation</strong></td>
+                                        <td class="blue-backG" style="text-align: center;" colspan="2"><strong>Walk-In</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;"><strong>Max. Persons</strong></td>
+                                        <td class="yellow-backG" style="text-align: center;"><strong>Half Day<br>(3 hrs)</strong></td>
+                                        <td class="yellow-backG" style="text-align: center;"><strong>Full Day</strong></td>
+                                        <td class="blue-backG" style="text-align: center;"><strong>Half Day<br>(3 hrs)</strong></td>
+                                        <td class="blue-backG" style="text-align: center;"><strong>Full Day</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="veh-people" style="text-align: center;">1</td>
+                                        <td class="veh-re-half" style="text-align: center;">$20</td>
+                                        <td class="veh-re-full" style="text-align: center;">$30</td>
+                                        <td class="veh-wa-half" style="text-align: center;">$25</td>
+                                        <td class="veh-wa-full" style="text-align: center;">$35</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button>Reserve</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section> -->
+            
+            
+            <section class="honda-section">
+                <h3>Honda Motor Scooter</h3>
+                
+            </section>
+
+            
+            <section class="contact-section">
+                <h4>Any question or suggestion please send a message</h4>
+                <form action="thanks.html" method="Get">
+                    <div>
+                        <label for="">Full Name<input type="text" value="" placeholder="John Doe" required></label>
+                        
+                    </div>
+                    <div>
+                        <label for="">Email<input type="email" value="" placeholder="example@example.com" required></label>
+                        
+                    </div>
+                    <div>
+                        <label for="">Message<textarea name="message-area" cols="30" rows="5"></textarea></label>
+                        
+                    </div>
+                    <button>Send My Message</button>
+                </form>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div>
+            <h5>Quick Links</h5>
+            <ul>
+                <li class="active2"><a href="">Home|</a></li>
+                <li><a href="#">Rentals|</a></li>
+                <li><a href="#">Reservations|</a></li>
+                <li><a href="#">Tours|</a></li>
+                <li><a href="#">Contact|</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="social-media">
+                <li><a href="#"><img src="images/facebook.jpeg" alt="facebook logo"></a></li>
+                <li><a href="#"><img src="images/instagram.jpeg" alt="facebook logo"></a></li>
+                <li><a href="#"><img src="images/youtube.png" alt="facebook logo"></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/hamburger-btn.js"></script>
+    <script src="js/scooter-inf.js"></script>
+</body>
+</html>

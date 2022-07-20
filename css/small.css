@@ -1,0 +1,64 @@
+@media (min-width:440px) and (max-width:767px){
+    .rental-card:nth-child(even){
+        flex-direction: row-reverse;
+        
+    }
+
+    .rental-card:nth-child(even) .rentcard-summary{
+        border-right:2px solid #272727ba;
+    }
+    
+    .rental-card:nth-child(odd) .rentcard-summary{
+        border-left:2px solid #272727ba;
+    }
+
+    .hero-img-section button,.weather-container button{
+        border: 1px solid #e7482c;
+    }
+    .h-image-5-url{
+        background-image: linear-gradient(#009fb70f, #009fb775),url("../images/contact-700.jpg");
+    }
+
+    .rental-pg.rentcard-summary{
+        padding: 0;
+    }
+
+    .forecast div p{
+        font-size: 1rem;
+    }
+
+    .forecast div h5{
+        padding: 4% 0;
+    }
+
+    .rental-card-a .rental-card:hover .rentcard-summary {
+        border-left: 2px solid #e7482c;
+    }
+
+    .rental-card-a .rental-card:active .rentcard-summary {
+        border-left: 2px solid #e7482c;
+    }
+
+    .veh-info-cont table,td,th{ 
+        font-size: .8rem;
+        
+    }
+
+    .veh-info-cont { 
+        padding: 2% 0 0 6%;
+        
+    }
+    .veh-info-cont table{ 
+        width: 70%;    
+        margin: auto;
+    }
+
+    .veh-info-cont button{ 
+        display: block;
+        width: 70%;   
+        margin: 2% auto; 
+     
+    }
+    
+
+}
