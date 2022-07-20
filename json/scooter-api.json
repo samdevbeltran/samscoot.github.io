@@ -1,8 +1,9 @@
 {
     "honda-motor-scooters":[
         {
-            "models": "Honda Metropolitan",
+            "model": "Honda Metropolitan",
             "max_person":"1",
+            "src": "honda-metro-350.jpg", 
             "reservation":{
                 "half-day":"$20",
                 "full-day":"$30"
@@ -15,6 +16,7 @@
         {
             "model":"Honda Dio",
             "max_person":"2",
+            "src": "Honda-dio-350.jpg", 
             "reservation":{
                 "half-day":"$30",
                 "full-day":"$40"
@@ -27,6 +29,7 @@
         {
             "model":"Honda PCX150",
             "max_person":"2",
+            "src": "HondaPCX-350.jpg", 
             "reservation":{
                 "half-day":"$40",
                 "full-day":"$50"
@@ -39,8 +42,9 @@
     ],
     "ATV":[
         {
-            "models": "Honda Pioneer 1000",
+            "model": "Honda Pioneer 1000",
             "max_person":"4",
+            "src": "pioneer1-350.jpg", 
             "reservation":{
                 "half-day":"$50",
                 "full-day":"$70"
@@ -53,8 +57,9 @@
     ],
     "Jeep rentals":[
         {
-            "models": "Jeep Wrangler-4 door with a/c",
+            "model": "Jeep Wrangler-4 door with a/c",
             "max_person":"5",
+            "src": "jeep1-350.jpg", 
             "reservation":{
                 "half-day":"$70",
                 "full-day":"$100"
@@ -66,8 +71,9 @@
         },
 
         {
-            "models": "Jeep Wrangler-2 door",
+            "model": "Jeep Wrangler-2 door",
             "max_person":"4",
+            "src": "jeppWrangler-350.jpg", 
             "reservation":{
                 "half-day":"$60",
                 "full-day":"$85"
