@@ -1,0 +1,58 @@
+@media only screen and (min-width:1023px) {
+    #hamburgerBtn{
+        display: none;
+    }
+    .main-container{
+        padding: 0 5%;
+    }
+    header{
+        background-image: none;
+    }
+    .header-container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header-container nav ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header-container nav{
+        margin-top: 2.5%;
+        flex-grow: 8;
+    }
+
+    .toggle-nav {
+        background-color: white;
+        margin:0 2%;
+        justify-content: end;
+    }
+    .toggle-nav li a {
+        color: #e7482c;
+        padding: 0.75rem;
+    }
+
+    .toggle-nav li a:hover {
+        color: white;
+        background-color: #e7482c;;
+    }
+
+    .hero-image{
+        height: 670px;
+        background-image: linear-gradient(#009fb70f, #009fb775),url("../images/heropage-1.jpg");
+    }
+
+    .picture-container div:nth-child(1){
+        width: 70%;
+    }
+
+    .picture-container div:nth-child(2){
+        width: 30%;
+    }
+
+    /* .rental-card{
+        flex-direction: column;
+        width: 30%;
+    } */
+}
