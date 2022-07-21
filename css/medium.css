@@ -126,6 +126,9 @@
     .h-image-3-url{
         background-image: linear-gradient(#009fb70f, #009fb775),url("../images/reservation-1023.jpg");
     }
+    .h-image-4-url{
+        background-image: linear-gradient(#009fb70f, #009fb775),url("../images/island_Cozumel-h-1023.jpg");
+    }
     .reservation-container{
         width: 70%;
         margin: auto;
@@ -148,4 +151,27 @@
     .scoot-types-section, .honda-section{
         margin-top: 0;
     }
+
+
+
+    .tours-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 2% 10%;
+    }
+
+    .tours-container div{
+        flex: 45%;
+    }
+    
+    .social-container{
+        flex-direction: column;
+    }
+
+    .location-container iframe {
+        width: 540px;
+    }
+
+    
+    
 }

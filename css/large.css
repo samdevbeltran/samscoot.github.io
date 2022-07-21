@@ -114,6 +114,10 @@
     .h-image-3-url{
         background-image: linear-gradient(#009fb70f, #009fb775),url("../images/reservation.jpg");
     }
+
+    .h-image-4-url{
+        background-image: linear-gradient(#009fb70f, #009fb775),url("../images/island_Cozumel-h-1279.jpg");
+    }
     .rental-card:nth-child(even){
         flex-direction: column;
         
@@ -150,5 +154,14 @@
 
     .reservation-container{
         width: 50%;
+    }
+
+    
+    .tours-container div{
+        flex: 29%;
+    }
+
+    .location-container iframe {
+        width: 800px;
     }
 }
