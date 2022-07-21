@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Secular+One&display=swap');
-
+html {
+    scroll-behavior: smooth;
+  }
 *{
     box-sizing: border-box;
 }
@@ -299,7 +301,7 @@ input,textarea{
     flex-direction: column;
 }
 
-.contact-section form button{
+.contact-section form button,.reservation-container button{
     border: none;
     color: white;
     background-color: #e7482c;
@@ -312,7 +314,10 @@ input,textarea{
     
 }
 
-.contact-section form button:active{
+.reservation-container form textarea{
+    width: 100%;
+}
+.contact-section form button:active ,.reservation-container button:active{
     color: #e7482c;
     background-color: white;
     
@@ -523,6 +528,52 @@ footer div ul li a{
     background: white;
     margin-bottom: 4%;
 }
+
+
+.block-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.inline-input{
+    display: flex;
+    flex-direction: row;
+}
+.reservation-container form fieldset legend{
+    text-align: center;
+}
+
+.personal-info{
+    margin-bottom: 4%;
+}
+
+.rental-info{
+    margin-bottom: 4%;
+}
+
+.personal-info label{
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+.rental-info label{
+    text-align: left;
+    margin-bottom: 4%;
+}
+
+.input-m-top{
+    margin-top: 2%;
+}
+
+label.block-input input:required:invalid, label.block-input select:required:invalid {
+    border: 1px solid red;
+    border-left: 5px solid red;
+}
+label.block-input select{
+    padding: 3% 2%;
+}
+
+
 @media only screen and (max-width:439px){
     .hero-image{
         text-align: center;
@@ -531,9 +582,13 @@ footer div ul li a{
     .h-image-1-url{
         background-image: linear-gradient(#009fb70f, #009fb775),url("../images/heropage-1-420.jpg");
     }
+    .h-image-2-url{
+        background-image: linear-gradient(#009fb70f, #009fb775),url("../images/rentals-420.jpg");
+    }
     .h-image-5-url{
         background-image: linear-gradient(#009fb70f, #009fb775),url("../images/contact-420.jpg");
     }
+
     .forecast div{
         height: 153px;
     }
@@ -565,5 +620,13 @@ footer div ul li a{
     .veh-info-cont button{
         width: 100%;
     }
+    
+    .reservation-container{
+        width: 100%;
+        padding: 13% 6%;
+        border: 1px solid black;
+    }
+    
+    
     
 }

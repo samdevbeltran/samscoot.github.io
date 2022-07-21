@@ -5,7 +5,7 @@ const weatherApiUrl = "https://api.openweathermap.org/data/2.5/weather?id="+ coz
 var date = new Date
 var nameDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
-if(document.URL.includes("samscoot.github.io/index.html")
+if(document.URL.includes("samscoot.github.io/")
     || document.URL.includes("samscoot.github.io/contact.html")){
 
     fetch(weatherApiUrl).then(response => {

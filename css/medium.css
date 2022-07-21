@@ -120,6 +120,8 @@
     }
 
 
-    
+    .h-image-2-url{
+        background-image: linear-gradient(#009fb70f, #009fb775),url("../images/rentals-1023.jpg");
+    }
     
 }

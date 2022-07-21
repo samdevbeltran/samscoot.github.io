@@ -18,6 +18,9 @@
     .h-image-5-url{
         background-image: linear-gradient(#009fb70f, #009fb775),url("../images/contact-700.jpg");
     }
+    .h-image-2-url{
+        background-image: linear-gradient(#009fb70f, #009fb775),url("../images/rentals-700.jpg");
+    }
 
     .rental-pg.rentcard-summary{
         padding: 0;
