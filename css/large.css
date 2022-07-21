@@ -111,6 +111,9 @@
         background-image: linear-gradient(#009fb70f, #009fb775),url("../images/rentals-1279.jpg");
     }
 
+    .h-image-3-url{
+        background-image: linear-gradient(#009fb70f, #009fb775),url("../images/reservation.jpg");
+    }
     .rental-card:nth-child(even){
         flex-direction: column;
         
@@ -143,5 +146,9 @@
 
     .scoot-grid {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .reservation-container{
+        width: 50%;
     }
 }

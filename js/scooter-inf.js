@@ -1,3 +1,4 @@
+var obj = ""
 function getVehicleHtml(obj){
     return '<div class="vehicle-container">'+
             '<div class="veh-img-cont">'+
@@ -35,11 +36,11 @@ function getVehicleHtml(obj){
 }
 const url = "https://samdevbeltran.github.io/samscoot.github.io/json/scooter-api.json"
 
-fetch(url).then(response => response.json() ).then(obj =>{
+fetch(url).then(response => response.json() ).then(result =>{
     let honda = document.querySelector("#honda-content");
     let atv = document.querySelector("#ATV-content");
     let jeep = document.querySelector("#jeep-content");
-
+    obj = result;
     obj["honda-motor-scooters"].forEach(element => {
         honda.innerHTML += getVehicleHtml(element);
     });
@@ -52,3 +53,52 @@ fetch(url).then(response => response.json() ).then(obj =>{
         jeep.innerHTML += getVehicleHtml(element);
     });
 })
+
+
+function getPrice(){
+    let selectScoot = document.getElementById("scooter_type")
+    let halfDay = document.getElementById("halfDay");
+    let fullDay = document.getElementById("fullDay");
+    let reservation = document.getElementById("reservationType");
+    let walkin = document.getElementById("walkinType");
+    let scootPrice = document.getElementById("scootPrice");
+    let timeUsage = "";
+    let rentalType = ""
+    let price = ""
+    if(fullDay.checked){
+        timeUsage = fullDay.value
+    }else if(halfDay.checked){                    
+        timeUsage = halfDay.value
+    }
+
+    if(reservation.checked){
+        rentalType = reservation.value
+    }else if(walkin.checked){                    
+        rentalType = walkin.value
+    }
+
+    if(selectScoot.value != ""){
+        obj["honda-motor-scooters"].forEach(scooter => {
+            if(scooter["model"] == selectScoot.value){
+                price = scooter[rentalType][timeUsage];
+            }
+        })
+
+        obj["ATV"].forEach(scooter => {
+            if(scooter["model"] == selectScoot.value){
+                price = scooter[rentalType][timeUsage];
+            }
+        })
+
+        obj["Jeep rentals"].forEach(scooter => {
+            if(scooter["model"] == selectScoot.value){
+                price = scooter[rentalType][timeUsage];
+            }
+        })
+    }
+
+    if(price != ""){
+        scootPrice.value = price;
+    }
+    
+}

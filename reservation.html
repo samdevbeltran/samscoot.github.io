@@ -38,19 +38,18 @@
         </div>
         <main>
             <section class="hero-img-section">
-                <div class="hero-image h-image-2-url">
+                <div class="hero-image h-image-3-url">
                     <h1>Scoots</h1>
-                    <h2>Retals</h2>
-                    <button class="button-m">Reserve a Scooter</button>
+                    <h2>Reservations</h2>
                 </div>
                 <button class="button-s">Reserve a Scooter</button>
             </section>
             <section class="rental-summary scoot-types-section">
                 <div>
-                    <p>We have the following models, choose the one you like best</p>
+                    <p>Check the scooters/cars models we have!!</p>
                 </div>
                 <div class="rental-card-container rental-pg">
-                    <a href="#honda-content" class="rental-card-a">
+                    <a href="rentals.html#honda-content" class="rental-card-a">
 
                         <div class="rental-card">
                             <picture>
@@ -65,7 +64,7 @@
                         </div>
 
                     </a>
-                    <a href="#ATV-content" class="rental-card-a">
+                    <a href="rentals.html#ATV-content" class="rental-card-a">
                         <div class="rental-card">
                         <picture>
                             <source media="(max-width:767px)" srcset="images/pioneer2-420.jpg">
@@ -78,7 +77,7 @@
                         </div>
                         </div>
                     </a>
-                    <a href="#jeep-content" class="rental-card-a">
+                    <a href="rentals.html#jeep-content" class="rental-card-a">
                         <div class="rental-card">
                         <picture>
                             <source media="(max-width:767px)" srcset="images/jeep2-420.jpg">
@@ -96,7 +95,23 @@
             </section>
 
             <section class="reservation-section">
+                
                 <div class="reservation-container">
+                    <div id="rental-agreement"><h4>Here you can choose the vehicle that best suits your needs. Just fill out the information above.</h4>
+                        <h4>Rental agreement</h4>
+                        <p>
+                            A $50 security deposit is required to confirm reservations.
+                            A valid drivers license is required in hand at time of rental.
+                            No one under 12 years of age is allowed to ride on the scooters.
+                            Fuel charge not included.
+                            Unlimited mileage.
+                            Liability insurance is free of charge.
+                            Reservations rate requires 24 hour prior notification.
+                            Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.
+                            Payment via Google Pay, cash, credit card, debit card, or PayPal.
+                            Rentals may be returned to either location.
+                        </p>
+                    </div>
                     <form action="confirmation.html">
                         
                         <fieldset class="personal-info">
@@ -110,28 +125,29 @@
                         <fieldset class="rental-info">
                             <legend>Rental information</legend>
                             <label class="block-input">Rental Type</label>
-                            <label class="inline-input" for="rental_type"><input checked type="radio" name="rental_type">Reservation</label>
-                            <label class="inline-input" for="rental_type"><input type="radio" name="rental_type">Walk-in</label>
+                            <label class="inline-input" for="rental_type"><input checked type="radio" onclick="getPrice()" id="reservationType" value="reservation" name="rental_type">Reservation</label>
+                            <label class="inline-input" for="rental_type"><input type="radio" onclick="getPrice()" id="walkinType" value="walk-in" name="rental_type">Walk-in</label>
                             <label class="block-input" for="date">When do you need the scooter?*<input class="input-m-top" type="date"></label>
                             <label class="block-input" >How long you will use the scooter?</label>
-                            <label class="inline-input" for="half"><input type="radio" checked name="time_usage" value="half">Half day</label>
-                            <label class="inline-input" for="full"><input type="radio" name="time_usage" value="full">Full day</label>
+                            <label class="inline-input" for="half"><input type="radio" checked name="time_usage" id="halfDay" onclick="getPrice()" value="half-day">Half day</label>
+                            <label class="inline-input" for="full"><input type="radio" name="time_usage" id="fullDay" onclick="getPrice()" value="full-day">Full day</label>
                             <label class="block-input" for="">Select the Scooter/vehicle you need* 
-                                <select name="scooter_type" class="input-m-top" required>
+                                <select name="scooter_type" id="scooter_type" onchange="getPrice()" class="input-m-top" required oncl>
                                     <option value="" >Select</option>
-                                    <option value="honda_metro">Honda Metropolitan - 1 person</option>
-                                    <option value="hond_dio">Honda Dio - 2 person</option>
-                                    <option value="honda_pc">Honda PCX150 - 2 person</option>
-                                    <option value="honda_pio">Honda Pioneer - 4 person</option>
-                                    <option value="jeep_wra_2d">Jeep Wrangler, 2 door - 4 person</option>
-                                    <option value="jeep_wra_4d">Jeep Wrangler, 4 door - 5 person</option>
+                                    <option value="Honda Metropolitan">Honda Metropolitan - 1 person</option>
+                                    <option value="Honda Dio">Honda Dio - 2 person</option>
+                                    <option value="Honda PCX150">Honda PCX150 - 2 person</option>
+                                    <option value="Honda Pioneer 1000">Honda Pioneer - 4 person</option>
+                                    <option value="Jeep Wrangler-4 door with a/c">Jeep Wrangler, 2 door - 4 person</option>
+                                    <option value="Jeep Wrangler-2 door">Jeep Wrangler, 4 door - 5 person</option>
                                 </select>
-                                <input type="text" class="input-m-top" value="$">
+                                <input type="text" id="scootPrice" class="input-m-top" value="" readonly>
                             </label>
-                            <label for="">Any extra specification?<textarea name="extra-especification" class="input-m-top" rows="10"></textarea></label>
+                            <label>Any extra specification?<textarea name="extra-especification" class="input-m-top" rows="10"></textarea></label>
                         </fieldset>
+                        <label><input type="checkbox" required name="rental_agreement">I gree with the terms of the <a href="#rental-agreement">Rental agreement</a> section</label>
+                        <button>Send</button>
                     </form>
-                    <button>Send</button>
                 </div>
             </section>
             

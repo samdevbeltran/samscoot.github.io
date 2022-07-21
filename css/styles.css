@@ -539,8 +539,18 @@ footer div ul li a{
     display: flex;
     flex-direction: row;
 }
+.reservation-section{
+    margin: 5% 0;
+    background-image: linear-gradient(white,white, #009fb740);
+    padding-bottom: 6%;
+}
 .reservation-container form fieldset legend{
     text-align: center;
+}
+.reservation-container{
+    border: 1px solid #27272769;
+    background-color: white;
+    border-radius: 9px;
 }
 
 .personal-info{
@@ -572,7 +582,11 @@ label.block-input input:required:invalid, label.block-input select:required:inva
 label.block-input select{
     padding: 3% 2%;
 }
-
+.reservation-container div{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
 
 @media only screen and (max-width:439px){
     .hero-image{
@@ -584,6 +598,9 @@ label.block-input select{
     }
     .h-image-2-url{
         background-image: linear-gradient(#009fb70f, #009fb775),url("../images/rentals-420.jpg");
+    }
+    .h-image-3-url{
+        background-image: linear-gradient(#009fb70f, #009fb775),url("../images/reservation-420.jpg");
     }
     .h-image-5-url{
         background-image: linear-gradient(#009fb70f, #009fb775),url("../images/contact-420.jpg");
@@ -624,7 +641,7 @@ label.block-input select{
     .reservation-container{
         width: 100%;
         padding: 13% 6%;
-        border: 1px solid black;
+        
     }
     
     
