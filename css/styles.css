@@ -644,6 +644,15 @@ label.block-input select{
     color: #e7482ce3;
 
 }
+
+.tours-section{
+    margin-bottom: 5%;
+    background-image: linear-gradient(white,white, #009fb740);
+    padding-bottom: 5%;
+}
+.location-section{
+    margin: 2%;
+}
 @media only screen and (max-width:439px){
     .hero-image{
         text-align: center;
@@ -705,6 +714,7 @@ label.block-input select{
     
     .tours-container{
         flex-direction: column;
+        
     }
 
     .location-container iframe{
