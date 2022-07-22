@@ -645,6 +645,11 @@ label.block-input select{
 
 }
 
+.contact-section form div label input:required:invalid{
+    border: 1px solid red;
+    border-left: 5px solid red;
+}
+
 .tours-section{
     margin-bottom: 5%;
     background-image: linear-gradient(white,white, #009fb740);
