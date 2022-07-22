@@ -30,7 +30,9 @@ function getVehicleHtml(obj){
                         '</tr>'+
                     '</tbody>'+
                 '</table>'+
-                '<button>Reserve</button>'+
+                '<form action="reservation.html">'+
+                    '<button>Reserve</button>'+
+                '</form>'
             '</div>'+
         '</div>';
 }
